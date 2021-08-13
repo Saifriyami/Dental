@@ -78,8 +78,14 @@ WSGI_APPLICATION = 'dental.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        "DBNAME": "postgre",
+        "USER": "SAIF",
+        "PASSWORD": "SAIF1234",
+
+
+
     }
 }
 
